@@ -390,8 +390,13 @@ class TransferManager:
         if len(fileobjs) > 1 and file_type != "FASTQ":
             raise AttributeError("paired end read files only supported for FASTQ")
 
+<<<<<<< HEAD
         if not reference_arn and (file_type != "FASTQ" or file_type != "UBAM"):
             raise AttributeError("Unlinked readset file types must specify a referenceArn")
+=======
+        if (reference_arn is None) and (file_type not in ["FASTQ", "UBAM"]):
+            raise AttributeError("Unlinked read set file types must specify a reference ARN")
+>>>>>>> 150d07a (Add UBAM support and replace ReadSetFileType with str)
 
 
         transfer_coordinator = self._get_future_coordinator()

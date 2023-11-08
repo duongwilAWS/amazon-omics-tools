@@ -128,7 +128,11 @@ class TestTransferManager(StubbedClientTest):
         filename = _format_local_filename("test-filename", ReadSetFileName.INDEX, "FASTQ")
         self.assertEqual(filename, "test-filename.index")
 
+<<<<<<< HEAD
     #UBAM should not have an .index file but we include this for consistency.
+=======
+    # UBAM should not have an .index file but we include this for consistency.
+>>>>>>> 150d07a (Add UBAM support and replace ReadSetFileType with str)
     def test_format_ubam_index_local_filename(self):
         filename = _format_local_filename("test-filename", ReadSetFileName.INDEX, "UBAM")
         self.assertEqual(filename, "test-filename.index")

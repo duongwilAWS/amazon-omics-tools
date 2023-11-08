@@ -4,6 +4,7 @@ Tools for working with the Amazon Omics Service.
 
 ## Using the Omics Transfer Manager
 
+<<<<<<< HEAD
 ### Set-up
 When using the Omics Transfer Manager, it's important to install any necessary required dependencies and models. This includes installation of the latest Omics service model if it is not latest updated model.
 
@@ -21,6 +22,16 @@ poetry install
 
 After running `poetry install`, the Omics Transfer Manager should be ready for usage.
 
+=======
+### Installation
+Installation
+Amazon Omics Tools is available through pypi. To install, type:
+
+```python
+pip install amazon-omics-tools
+```
+
+>>>>>>> 150d07a (Add UBAM support and replace ReadSetFileType with str)
 ### Basic Usage
 The `TransferManager` class makes it easy to download files for an Omics reference or read set.  By default the files are saved to the current directory, or you can specify a custom location with the `directory` parameter.
 
